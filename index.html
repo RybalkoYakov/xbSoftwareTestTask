@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CityMap</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+</head>
+<body>
+
+    <div class="city-map">
+        <div class="states-cities">
+            <label>enter state <input type="text" class="states-cities__input" placeholder="enter state here"></label>
+            <button class="states-cities__button">get Cities</button>
+        </div>
+        <div class="input-city-form">
+            <div>
+                <label>enter city's name <input type="text" class="input-city-form__name" placeholder="name here"></label>
+                <label>enter city's state <input type="text" class="input-city-form__state" placeholder="tate here"></label>
+                <label>enter city's latitude <input type="text" class="input-city-form__latitude" placeholder="latitude here"></label>
+                <label>enter city's longitude <input type="text" class="input-city-form__longitude" placeholder="longitude here"></label>
+            </div>
+            <button class="input-city-form__button">add city</button>
+        </div>
+        <button class="save-in-localstorage">Save added cities in localstorage</button>
+        <div class="city-map__output">Waiting request...</div>
+    </div>
+    <div id="my_dataviz"></div>
+
+    <script src="js/xbSoftwareTest.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/pieChart.js"></script>
+</body>
+</html>

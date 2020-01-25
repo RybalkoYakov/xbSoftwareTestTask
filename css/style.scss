@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.city-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.states-cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+
+  &>label {
+    width: 250px;
+    height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+
+    &>input {
+      width: 120px;
+      height: 25px;
+      margin-left: 10px;
+
+      &::placeholder {
+        font-family: sans-serif;
+        font-size: 12px;
+        text-transform: lowercase;
+        text-align: center;
+      }
+    }
+  }
+
+  &__button {
+    padding: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.input-city-form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+
+  &>div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    &>label {
+      padding-left: 5px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 25px;
+
+      &>input {
+        float: right;
+        height: 25px;
+        margin: 3px 5px;
+
+        &::placeholder {
+          font-family: sans-serif;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &>button {
+    width: 82px;
+    cursor: pointer;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+
+  }
+}
+
+.save-in-localstorage {
+  width: 384px;
+  height: 25px;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.city-map__output {
+  display: flex;
+  justify-content: center;
+  width: 384px;
+  border: 1px solid black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#my_dataviz {
+  display: flex;
+  justify-content: center;
+
+  &>svg{
+    display: flex;
+    justify-content: center;
+  }
+}
